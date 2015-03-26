@@ -8,5 +8,11 @@ tagline: Supporting tagline
 <h2> To-Do</h2>
 <p>So much work to do!</p>
 
+## Blog Posts
+
+{% for post in site.posts %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+{% endfor %}
+
 
 
